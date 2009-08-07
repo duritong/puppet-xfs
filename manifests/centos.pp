@@ -4,7 +4,7 @@ class xfs::centos {
     }
 
     case $virtual {
-        xen0: {
+        xen0,xenu: {
             package{'kmod-xfs-xen':
                 ensure => present,
             }
